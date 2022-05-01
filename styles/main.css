@@ -458,4 +458,17 @@ h3 {
 - add that animation to the element with the class "burger-icon" and make it last 2 seconds and run infinitely 
 
 */
+.card {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.card:hover {
+  -webkit-transform: scaleY(20);
+          transform: scaleY(20);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 /*# sourceMappingURL=main.css.map */
